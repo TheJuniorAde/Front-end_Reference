@@ -1,7 +1,7 @@
 ﻿'use strict';
 (function () {
     angular.module('modLogin', ['modAjax']) // you don't need to inject $scope
-        .controller('loginCtrl', ['modAjax', '$scope', function (ajax, $scope) {
+        .controller('loginCtrl', ['ajax', '$scope', function (ajax, $scope) { // you must inject the ajax (service), not the module
             $scope.message = "to no login";
 
             function fazerLogin(url, params) {
