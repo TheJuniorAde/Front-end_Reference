@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <title>FrontEnd</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MultiContas Page">
+    <meta name="author" content="Hugo Almeida, Lucas Lira">
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+ 
+  
+    <!-- Lib's Principais -->
+    <script src="core/lib/jquery/jquery-1.9.1.js"></script>
+    <script src="core/lib/angular/angular.js"></script>
+    <script src="core/lib/angular/angular-route.js"></script>
+    <script src="core/lib/bootstrap/bootstrap.js"></script>
+    
+
+    <!-- Components -->        
+    <script src="core/main/app.js"></script>
+    <script src="core/main/route.js"></script>
+    <script src="core/components/modLogin.js"></script>
+    <script src="core/components/modHome.js"></script>
+
+</head>
+<body>
+
+    <div id="colordiv">
+        <header class="navbar navbar-inverse bs-docs-nav" role="banner">
+            <div class="container ">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#" class="navbar-brand scroll-link" data-id="carousel1">Startup Page</a>
+                </div>
+                <nav class="collapse navbar-collapse bs-navbar-collapse pull-right" role="navigation">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#" class="scroll-link" data-id="signup">Sign Up</a></li>
+                        <li><a href="#" class="scroll-link" data-id="whatwedo">What we do</a></li>
+                        <li><a href="#" class="scroll-link" data-id="application">Application Process</a></li>
+                        <li><a href="#" class="scroll-link" data-id="pricing">Pricing</a></li>
+                        <li><a href="#" class="scroll-link" data-id="location">Location</a></li>
+                        <li><a href="#" class="scroll-link" data-id="comments">Comments</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    <div>
+  <h1>Index</h1>    
+    {{2+2}}
+  <div ng-view>
+
+        {{message}}
+
+  </div>
+
+
+
+</body>
+</html>
